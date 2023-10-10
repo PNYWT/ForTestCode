@@ -1,0 +1,16 @@
+PODS:
+  - MarqueeLabel/Swift (3.2.1)
+
+DEPENDENCIES:
+  - MarqueeLabel/Swift
+
+SPEC REPOS:
+  trunk:
+    - MarqueeLabel
+
+SPEC CHECKSUMS:
+  MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
+
+PODFILE CHECKSUM: a9bc9ad69064c5c0ccd4bd7fe5238a27eeb0b88f
+
+COCOAPODS: 1.11.3
