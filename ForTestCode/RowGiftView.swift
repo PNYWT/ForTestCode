@@ -1,16 +1,15 @@
 //
-//  AnnounceView.swift
-//  Test
+//  RowGiftView.swift
+//  LoLi
 //
-//  Created by Dev on 10/10/2566 BE.
+//  Created by Dev on 11/10/2566 BE.
 //
 
 import UIKit
 
-class AnnounceView: UIView {
+class RowGiftView: UIView {
 
-    @IBOutlet var vNib: UIView!
-    
+    @IBOutlet weak var vNib:UIView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,7 +23,7 @@ class AnnounceView: UIView {
     
     private func commonInit() {
         self.backgroundColor = .clear
-        Bundle.main.loadNibNamed("AnnounceView", owner: self, options: nil)
+        Bundle.main.loadNibNamed("RowGiftView", owner: self, options: nil)
         addSubview(vNib)
         vNib.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -33,6 +32,6 @@ class AnnounceView: UIView {
             vNib.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
             vNib.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0),
         ])
-        vNib.backgroundColor = .clear
+        vNib.backgroundColor = .red
     }
 }

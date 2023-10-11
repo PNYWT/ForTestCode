@@ -9,36 +9,32 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var showAnnounce: UIButton!
+    @IBOutlet weak var btnAnimate: UIButton!
+    @IBOutlet weak var btnGiftList: UIButton!
     @IBOutlet weak var btnCointBurst: UIButton!
-    
     @IBOutlet weak var openTableView: UIButton!
-    
-    @IBOutlet weak var overCurrentContext: UIButton!
-    
-    @IBOutlet weak var overFullScr: UIButton!
-    
     @IBOutlet weak var popOver: UIButton!
-
-    private var announceView:AnnounceView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         openTableView.addTarget(self, action: #selector(actionTableView), for: .touchUpInside)
-        overCurrentContext.addTarget(self, action: #selector(actionOverCurrentContext), for: .touchUpInside)
-        overFullScr.addTarget(self, action: #selector(actionoverFullScr), for: .touchUpInside)
         btnCointBurst.addTarget(self, action: #selector(animateCoinsBurst), for: .touchUpInside)
-        showAnnounce.addTarget(self, action: #selector(actionShowAnnounce), for: .touchUpInside)
+        
+        btnAnimate.addTarget(self, action: #selector(actionAnimate), for: .touchUpInside)
+        btnGiftList.addTarget(self, action: #selector(gotoGiftList), for: .touchUpInside)
     }
     
-    @objc func actionShowAnnounce(){
-        announceView = AnnounceView(frame: CGRect(x: 0, y: 44, width: self.view.frame.width, height: 200))
-        announceView.backgroundColor = .red
-        self.view.addSubview(announceView)
+    @objc func gotoGiftList(){
+        let vc = GiftListVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func actionAnimate(){
+        let vc = AnimateVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func actionTableView(){
-//        animateCoinsBurst()
         let vc = TableViewVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
@@ -69,21 +65,6 @@ class ViewController: UIViewController {
                 }
             }
         }
-    }
-
-
-
-    
-    @objc func actionOverCurrentContext(){
-        let vc = PresentVC()
-        vc.modalPresentationStyle = .overCurrentContext
-        self.present(vc, animated: true)
-    }
-    
-    @objc func actionoverFullScr(){
-        let vc = PresentVC()
-        vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true)
     }
     
     @IBAction func showPopover(_ sender: UIButton) {

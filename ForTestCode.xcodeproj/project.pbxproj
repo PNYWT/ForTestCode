@@ -8,51 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		CE0765C1D5A18F55C18B31EF /* Pods_ForTestCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772101E27D4045F7D2BEB1A3 /* Pods_ForTestCode.framework */; };
+		D73DF6242AD6BAE100C06CC4 /* ShowGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */; };
 		D7D7AD752AD55A2300647055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD742AD55A2300647055 /* Assets.xcassets */; };
 		D7D7AD782AD55A2300647055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD762AD55A2300647055 /* LaunchScreen.storyboard */; };
-		D7D7AD902AD55A3B00647055 /* PresentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD802AD55A3800647055 /* PresentVC.swift */; };
 		D7D7AD912AD55A3B00647055 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD812AD55A3800647055 /* Extension.swift */; };
 		D7D7AD922AD55A3B00647055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD822AD55A3800647055 /* AppDelegate.swift */; };
-		D7D7AD932AD55A3B00647055 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD832AD55A3800647055 /* PopoverViewController.swift */; };
 		D7D7AD942AD55A3B00647055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD842AD55A3900647055 /* Main.storyboard */; };
 		D7D7AD952AD55A3B00647055 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD852AD55A3900647055 /* MyTableViewCell.swift */; };
 		D7D7AD962AD55A3B00647055 /* TableViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD862AD55A3900647055 /* TableViewVC.xib */; };
-		D7D7AD972AD55A3B00647055 /* AnnounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD872AD55A3900647055 /* AnnounceView.swift */; };
-		D7D7AD982AD55A3B00647055 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD882AD55A3A00647055 /* PopoverViewController.xib */; };
+		D7D7AD972AD55A3B00647055 /* LabelAnnounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD872AD55A3900647055 /* LabelAnnounce.swift */; };
 		D7D7AD992AD55A3B00647055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD892AD55A3A00647055 /* SceneDelegate.swift */; };
 		D7D7AD9A2AD55A3B00647055 /* TableViewCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD8A2AD55A3A00647055 /* TableViewCenter.swift */; };
-		D7D7AD9B2AD55A3B00647055 /* PresentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD8B2AD55A3A00647055 /* PresentVC.xib */; };
 		D7D7AD9C2AD55A3B00647055 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD8C2AD55A3A00647055 /* TableViewVC.swift */; };
-		D7D7AD9D2AD55A3B00647055 /* AnnounceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD8D2AD55A3B00647055 /* AnnounceView.xib */; };
+		D7D7AD9D2AD55A3B00647055 /* LabelAnnounce.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD8D2AD55A3B00647055 /* LabelAnnounce.xib */; };
 		D7D7AD9E2AD55A3B00647055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD8E2AD55A3B00647055 /* ViewController.swift */; };
 		D7D7AD9F2AD55A3B00647055 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD8F2AD55A3B00647055 /* MyTableViewCell.xib */; };
+		D7D7ADA52AD6940600647055 /* AnnounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADA42AD6940600647055 /* AnnounceView.swift */; };
+		D7D7ADB32AD6B57500647055 /* AnimateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADB22AD6B57500647055 /* AnimateVC.swift */; };
+		D7D7ADB72AD6B85E00647055 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADB52AD6B85E00647055 /* PopoverViewController.swift */; };
+		D7D7ADB82AD6B85E00647055 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7ADB62AD6B85E00647055 /* PopoverViewController.xib */; };
+		D7D7ADBC2AD6B89200647055 /* GiftListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADBB2AD6B89200647055 /* GiftListVC.swift */; };
+		D7D7ADC02AD6B8F700647055 /* RowGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */; };
+		D7D7ADC12AD6B8F700647055 /* RowGiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38D380721B5727C65F46165B /* Pods-ForTestCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForTestCode.release.xcconfig"; path = "Target Support Files/Pods-ForTestCode/Pods-ForTestCode.release.xcconfig"; sourceTree = "<group>"; };
 		4AA4156DA9B8FA3CF6C28B0C /* Pods-ForTestCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForTestCode.debug.xcconfig"; path = "Target Support Files/Pods-ForTestCode/Pods-ForTestCode.debug.xcconfig"; sourceTree = "<group>"; };
 		772101E27D4045F7D2BEB1A3 /* Pods_ForTestCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForTestCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGiftView.swift; sourceTree = "<group>"; };
 		D7D7AD682AD55A2200647055 /* ForTestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForTestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D7AD742AD55A2300647055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7D7AD772AD55A2300647055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7D7AD792AD55A2300647055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7D7AD7F2AD55A3700647055 /* ForTestCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ForTestCode-Bridging-Header.h"; sourceTree = "<group>"; };
-		D7D7AD802AD55A3800647055 /* PresentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentVC.swift; sourceTree = "<group>"; };
 		D7D7AD812AD55A3800647055 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		D7D7AD822AD55A3800647055 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7D7AD832AD55A3800647055 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		D7D7AD842AD55A3900647055 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D7D7AD852AD55A3900647055 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		D7D7AD862AD55A3900647055 /* TableViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewVC.xib; sourceTree = "<group>"; };
-		D7D7AD872AD55A3900647055 /* AnnounceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnounceView.swift; sourceTree = "<group>"; };
-		D7D7AD882AD55A3A00647055 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
+		D7D7AD872AD55A3900647055 /* LabelAnnounce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelAnnounce.swift; sourceTree = "<group>"; };
 		D7D7AD892AD55A3A00647055 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D7D7AD8A2AD55A3A00647055 /* TableViewCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCenter.swift; sourceTree = "<group>"; };
-		D7D7AD8B2AD55A3A00647055 /* PresentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentVC.xib; sourceTree = "<group>"; };
 		D7D7AD8C2AD55A3A00647055 /* TableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
-		D7D7AD8D2AD55A3B00647055 /* AnnounceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnounceView.xib; sourceTree = "<group>"; };
+		D7D7AD8D2AD55A3B00647055 /* LabelAnnounce.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelAnnounce.xib; sourceTree = "<group>"; };
 		D7D7AD8E2AD55A3B00647055 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7D7AD8F2AD55A3B00647055 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		D7D7ADA42AD6940600647055 /* AnnounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnounceView.swift; sourceTree = "<group>"; };
+		D7D7ADB22AD6B57500647055 /* AnimateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateVC.swift; sourceTree = "<group>"; };
+		D7D7ADB52AD6B85E00647055 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		D7D7ADB62AD6B85E00647055 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
+		D7D7ADBB2AD6B89200647055 /* GiftListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftListVC.swift; sourceTree = "<group>"; };
+		D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowGiftView.swift; sourceTree = "<group>"; };
+		D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RowGiftView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +81,6 @@
 				4AA4156DA9B8FA3CF6C28B0C /* Pods-ForTestCode.debug.xcconfig */,
 				38D380721B5727C65F46165B /* Pods-ForTestCode.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -98,28 +105,40 @@
 		D7D7AD6A2AD55A2200647055 /* ForTestCode */ = {
 			isa = PBXGroup;
 			children = (
-				D7D7AD872AD55A3900647055 /* AnnounceView.swift */,
-				D7D7AD8D2AD55A3B00647055 /* AnnounceView.xib */,
-				D7D7AD822AD55A3800647055 /* AppDelegate.swift */,
 				D7D7AD812AD55A3800647055 /* Extension.swift */,
+				D7D7AD822AD55A3800647055 /* AppDelegate.swift */,
 				D7D7AD842AD55A3900647055 /* Main.storyboard */,
-				D7D7AD852AD55A3900647055 /* MyTableViewCell.swift */,
-				D7D7AD8F2AD55A3B00647055 /* MyTableViewCell.xib */,
-				D7D7AD832AD55A3800647055 /* PopoverViewController.swift */,
-				D7D7AD882AD55A3A00647055 /* PopoverViewController.xib */,
-				D7D7AD802AD55A3800647055 /* PresentVC.swift */,
-				D7D7AD8B2AD55A3A00647055 /* PresentVC.xib */,
-				D7D7AD892AD55A3A00647055 /* SceneDelegate.swift */,
-				D7D7AD8A2AD55A3A00647055 /* TableViewCenter.swift */,
-				D7D7AD8C2AD55A3A00647055 /* TableViewVC.swift */,
-				D7D7AD862AD55A3900647055 /* TableViewVC.xib */,
 				D7D7AD8E2AD55A3B00647055 /* ViewController.swift */,
+				D7D7ADBB2AD6B89200647055 /* GiftListVC.swift */,
+				D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */,
+				D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */,
+				D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */,
+				D7D7ADB22AD6B57500647055 /* AnimateVC.swift */,
+				D7D7ADB52AD6B85E00647055 /* PopoverViewController.swift */,
+				D7D7ADB62AD6B85E00647055 /* PopoverViewController.xib */,
+				D7D7ADB42AD6B59300647055 /* Animate */,
+				D7D7AD892AD55A3A00647055 /* SceneDelegate.swift */,
 				D7D7AD742AD55A2300647055 /* Assets.xcassets */,
 				D7D7AD762AD55A2300647055 /* LaunchScreen.storyboard */,
 				D7D7AD792AD55A2300647055 /* Info.plist */,
 				D7D7AD7F2AD55A3700647055 /* ForTestCode-Bridging-Header.h */,
 			);
 			path = ForTestCode;
+			sourceTree = "<group>";
+		};
+		D7D7ADB42AD6B59300647055 /* Animate */ = {
+			isa = PBXGroup;
+			children = (
+				D7D7ADA42AD6940600647055 /* AnnounceView.swift */,
+				D7D7AD872AD55A3900647055 /* LabelAnnounce.swift */,
+				D7D7AD8D2AD55A3B00647055 /* LabelAnnounce.xib */,
+				D7D7AD8A2AD55A3A00647055 /* TableViewCenter.swift */,
+				D7D7AD8C2AD55A3A00647055 /* TableViewVC.swift */,
+				D7D7AD862AD55A3900647055 /* TableViewVC.xib */,
+				D7D7AD852AD55A3900647055 /* MyTableViewCell.swift */,
+				D7D7AD8F2AD55A3B00647055 /* MyTableViewCell.xib */,
+			);
+			path = Animate;
 			sourceTree = "<group>";
 		};
 		E92DEC0C7F4B973FE03AD4FC /* Frameworks */ = {
@@ -192,13 +211,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D7AD962AD55A3B00647055 /* TableViewVC.xib in Resources */,
+				D7D7ADB82AD6B85E00647055 /* PopoverViewController.xib in Resources */,
 				D7D7AD942AD55A3B00647055 /* Main.storyboard in Resources */,
 				D7D7AD782AD55A2300647055 /* LaunchScreen.storyboard in Resources */,
-				D7D7AD9D2AD55A3B00647055 /* AnnounceView.xib in Resources */,
+				D7D7AD9D2AD55A3B00647055 /* LabelAnnounce.xib in Resources */,
+				D7D7ADC12AD6B8F700647055 /* RowGiftView.xib in Resources */,
 				D7D7AD752AD55A2300647055 /* Assets.xcassets in Resources */,
 				D7D7AD9F2AD55A3B00647055 /* MyTableViewCell.xib in Resources */,
-				D7D7AD9B2AD55A3B00647055 /* PresentVC.xib in Resources */,
-				D7D7AD982AD55A3B00647055 /* PopoverViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,12 +271,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D7AD9E2AD55A3B00647055 /* ViewController.swift in Sources */,
-				D7D7AD932AD55A3B00647055 /* PopoverViewController.swift in Sources */,
 				D7D7AD992AD55A3B00647055 /* SceneDelegate.swift in Sources */,
-				D7D7AD972AD55A3B00647055 /* AnnounceView.swift in Sources */,
+				D7D7ADBC2AD6B89200647055 /* GiftListVC.swift in Sources */,
+				D7D7AD972AD55A3B00647055 /* LabelAnnounce.swift in Sources */,
+				D7D7ADC02AD6B8F700647055 /* RowGiftView.swift in Sources */,
 				D7D7AD922AD55A3B00647055 /* AppDelegate.swift in Sources */,
 				D7D7AD9A2AD55A3B00647055 /* TableViewCenter.swift in Sources */,
-				D7D7AD902AD55A3B00647055 /* PresentVC.swift in Sources */,
+				D7D7ADB32AD6B57500647055 /* AnimateVC.swift in Sources */,
+				D73DF6242AD6BAE100C06CC4 /* ShowGiftView.swift in Sources */,
+				D7D7ADA52AD6940600647055 /* AnnounceView.swift in Sources */,
+				D7D7ADB72AD6B85E00647055 /* PopoverViewController.swift in Sources */,
 				D7D7AD9C2AD55A3B00647055 /* TableViewVC.swift in Sources */,
 				D7D7AD952AD55A3B00647055 /* MyTableViewCell.swift in Sources */,
 				D7D7AD912AD55A3B00647055 /* Extension.swift in Sources */,

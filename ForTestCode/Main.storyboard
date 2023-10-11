@@ -11,36 +11,31 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ForTestCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="YPx-kM-hRU">
-                                <rect key="frame" x="109.33333333333333" y="277.66666666666669" width="174.66666666666669" height="366.00000000000006"/>
+                                <rect key="frame" x="144.33333333333334" y="310.66666666666663" width="104.66666666666666" height="299.66666666666663"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGU-Nq-fUK">
-                                        <rect key="frame" x="19.666666666666671" y="0.0" width="135" height="34.333333333333336"/>
+                                        <rect key="frame" x="13" y="0.0" width="78.666666666666671" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Announce Run"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="GiftList"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dub-VV-7C8">
+                                        <rect key="frame" x="9" y="66.333333333333314" width="86.666666666666671" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Animate"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRg-cE-RZJ">
-                                        <rect key="frame" x="36.666666666666671" y="66.333333333333314" width="101.00000000000001" height="34.333333333333343"/>
+                                        <rect key="frame" x="1.6666666666666572" y="132.66666666666663" width="101" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="TableView"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLw-xy-wNl">
-                                        <rect key="frame" x="0.0" y="132.66666666666663" width="174.66666666666666" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="overCurrentContext"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbd-Yk-zCL">
-                                        <rect key="frame" x="18.666666666666671" y="199" width="137" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="overFullScreen"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JP-et-0Sv">
-                                        <rect key="frame" x="42.000000000000021" y="265.33333333333331" width="90.333333333333314" height="34.333333333333314"/>
+                                        <rect key="frame" x="7" y="199" width="90.333333333333329" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="PopOver"/>
                                         <connections>
@@ -48,7 +43,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiQ-ND-syy">
-                                        <rect key="frame" x="35.000000000000007" y="331.66666666666669" width="104.66666666666669" height="34.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="265.33333333333331" width="104.66666666666667" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="CointBurst"/>
                                     </button>
@@ -64,12 +59,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="XG8-AS-6sQ"/>
                     <connections>
+                        <outlet property="btnAnimate" destination="Dub-VV-7C8" id="1bN-16-7cm"/>
                         <outlet property="btnCointBurst" destination="JiQ-ND-syy" id="PxN-es-MMS"/>
+                        <outlet property="btnGiftList" destination="KGU-Nq-fUK" id="zks-BC-B4g"/>
                         <outlet property="openTableView" destination="CRg-cE-RZJ" id="PTf-v6-Rdx"/>
-                        <outlet property="overCurrentContext" destination="mLw-xy-wNl" id="3h9-Ua-xln"/>
-                        <outlet property="overFullScr" destination="cbd-Yk-zCL" id="FtQ-Mw-tWw"/>
                         <outlet property="popOver" destination="7JP-et-0Sv" id="TNw-Zk-zHK"/>
-                        <outlet property="showAnnounce" destination="KGU-Nq-fUK" id="MTd-oV-zBb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
