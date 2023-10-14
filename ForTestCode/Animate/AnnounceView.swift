@@ -17,9 +17,17 @@ class AnnounceView: UIView {
     private var vAnnounceTwo: UIView! = UIView(frame: .zero)
     private var vAnnounceThree: UIView! = UIView(frame: .zero)
     
-    private var imageOne = UIImageView(frame: .zero)
-    private var imageTwo = UIImageView(frame: .zero)
-    private var imageThree = UIImageView(frame: .zero)
+    private var imageBgOne = UIImageView(frame: .zero)
+    private var imageBgTwo = UIImageView(frame: .zero)
+    private var imageBgThree = UIImageView(frame: .zero)
+    
+    private var imageTreasureOne = UIImageView()
+    private var imageTreasureTwo = UIImageView()
+    private var imageTreasureThree = UIImageView()
+    
+    private var imageUserOne = UIImageView()
+    private var imageUserTwo = UIImageView()
+    private var imageUserThree = UIImageView()
     
     private var lbOne = UILabel(frame: .zero)
     private var lbTwo = UILabel(frame: .zero)
@@ -39,18 +47,37 @@ class AnnounceView: UIView {
         commonInit()
     }
     
+    private var heightBg:CGFloat = 0.0
+    private var widthBg:CGFloat = 0.0
+    private var xSpace:CGFloat = 0.0
+    
     private func commonInit() {
         self.backgroundColor = .clear
         //MARK: ---------------------
-        vAnnounceOne = UIView(frame: CGRect(x: screenWidth, y: 8, width: screenWidth , height: 50))
+        vAnnounceOne = UIView(frame: CGRect(x: 0, y: 8, width: screenWidth , height: 50))
         vAnnounceOne.backgroundColor = .yellow
         self.addSubview(vAnnounceOne)
         
-        imageOne = UIImageView(frame: CGRect(x: (screenWidth - widthsmallThanSelfWidth)/2, y: 5, width: widthsmallThanSelfWidth, height: vAnnounceOne.frame.height - 10))
-        imageOne.image = UIImage(named: "bgAnnounce")
-        vAnnounceOne.addSubview(imageOne)
+        heightBg = vAnnounceOne.frame.height
+        widthBg = widthsmallThanSelfWidth - vAnnounceOne.frame.height
         
-        lbOne = UILabel(frame: CGRect(x: imageOne.frame.origin.x + 5, y: ((imageOne.frame.height - 10) - imageOne.frame.origin.y)/2 , width: imageOne.frame.width - 20 , height:  imageOne.frame.height - 10))
+        imageBgOne = UIImageView(frame: CGRect(x: (vAnnounceOne.frame.width - widthBg)/2, y: 0, width: widthBg, height: heightBg))
+        imageBgOne.image = UIImage(named: "bgAnnounce")
+        vAnnounceOne.addSubview(imageBgOne)
+        
+        imageTreasureOne = UIImageView(frame: CGRect(x: imageBgOne.frame.origin.x - imageBgOne.frame.height/2 , y: (vAnnounceOne.frame.height - imageBgOne.frame.height)/2, width: imageBgOne.frame.height, height: imageBgOne.frame.height))
+        imageTreasureOne.image = UIImage(named: "coin")
+        vAnnounceOne.addSubview(imageTreasureOne)
+        
+        imageUserOne = UIImageView(frame: CGRect(x: imageTreasureOne.frame.origin.x + imageTreasureOne.frame.width, y: (imageBgOne.frame.height - (heightBg/2))/2 + 2, width: heightBg/2, height: heightBg/2))
+        imageUserOne.image = UIImage(named: "coin")
+        imageUserOne.contentMode = .scaleAspectFill
+        imageUserOne.backgroundColor = .red
+        vAnnounceOne.addSubview(imageUserOne)
+        
+        xSpace = imageUserOne.frame.origin.x + imageUserOne.frame.width
+        lbOne = UILabel(frame: CGRect(x: xSpace, y: imageUserOne.frame.origin.y, width: imageBgOne.frame.width - xSpace, height: imageUserOne.frame.height))
+        lbOne.backgroundColor = .clear
         lbOne.text = "ASL:KDJ:SALKD:LASKD:SAKD:OSAKD:LSAK:O"
         setupLabel(label: lbOne)
         vAnnounceOne.addSubview(lbOne)
@@ -59,11 +86,25 @@ class AnnounceView: UIView {
         vAnnounceTwo.backgroundColor = .red
         self.addSubview(vAnnounceTwo)
         
-        imageTwo = UIImageView(frame: CGRect(x: 5, y: 5, width: widthsmallThanSelfWidth, height: vAnnounceTwo.frame.height - 10))
-        imageTwo.image = UIImage(named: "bgAnnounce")
-        vAnnounceTwo.addSubview(imageTwo)
+        heightBg = vAnnounceTwo.frame.height
+        widthBg = widthsmallThanSelfWidth - vAnnounceTwo.frame.height
         
-        lbTwo = UILabel(frame: CGRect(x: imageTwo.frame.origin.x + 5, y: ((imageTwo.frame.height - 10) - imageTwo.frame.origin.y)/2 , width: imageTwo.frame.width - 20 , height:  imageTwo.frame.height - 10))
+        imageBgTwo = UIImageView(frame: CGRect(x: (vAnnounceTwo.frame.width - widthBg)/2, y: 0, width: widthBg, height: heightBg))
+        imageBgTwo.image = UIImage(named: "bgAnnounce")
+        vAnnounceTwo.addSubview(imageBgTwo)
+        
+        imageTreasureTwo = UIImageView(frame: CGRect(x: imageBgTwo.frame.origin.x - imageBgTwo.frame.height/2 , y: (vAnnounceTwo.frame.height - imageBgTwo.frame.height)/2, width: imageBgTwo.frame.height, height: imageBgTwo.frame.height))
+        imageTreasureTwo.image = UIImage(named: "coin")
+        vAnnounceTwo.addSubview(imageTreasureTwo)
+        
+        imageUserTwo = UIImageView(frame: CGRect(x: imageTreasureTwo.frame.origin.x + imageTreasureTwo.frame.width, y: (imageTreasureTwo.frame.height - (heightBg/2))/2 + 2, width: heightBg/2, height: heightBg/2))
+        imageUserTwo.image = UIImage(named: "coin")
+        imageUserTwo.contentMode = .scaleAspectFill
+        vAnnounceTwo.addSubview(imageUserTwo)
+        
+        xSpace = imageUserTwo.frame.origin.x + imageUserTwo.frame.width
+        lbTwo = UILabel(frame: CGRect(x: xSpace, y:imageUserTwo.frame.origin.y, width: imageBgTwo.frame.width - xSpace, height: imageUserTwo.frame.height))
+        lbTwo.backgroundColor = .clear
         lbTwo.text = "ASL:KDJ:SALKD:LASKD:SAKD:OSAKD:LSAK:O"
         setupLabel(label: lbTwo)
         vAnnounceTwo.addSubview(lbTwo)
@@ -72,11 +113,25 @@ class AnnounceView: UIView {
         vAnnounceThree.backgroundColor = .white
         self.addSubview(vAnnounceThree)
         
-        imageThree = UIImageView(frame: CGRect(x: 5, y: 5, width: widthsmallThanSelfWidth, height: vAnnounceThree.frame.height - 10))
-        imageThree.image = UIImage(named: "bgAnnounce")
-        vAnnounceThree.addSubview(imageThree)
+        heightBg = vAnnounceThree.frame.height
+        widthBg = widthsmallThanSelfWidth - vAnnounceThree.frame.height
         
-        lbThree = UILabel(frame: CGRect(x: imageThree.frame.origin.x + 5, y: ((imageThree.frame.height - 10) - imageThree.frame.origin.y)/2 , width: imageThree.frame.width - 20 , height:  imageThree.frame.height - 10))
+        imageBgThree = UIImageView(frame: CGRect(x: (vAnnounceThree.frame.width - widthBg)/2, y: 0, width: widthBg, height: heightBg))
+        imageBgThree.image = UIImage(named: "bgAnnounce")
+        vAnnounceThree.addSubview(imageBgThree)
+        
+        imageTreasureThree = UIImageView(frame: CGRect(x: imageBgThree.frame.origin.x - imageBgThree.frame.height/2 , y: (vAnnounceThree.frame.height - imageBgThree.frame.height)/2, width: imageBgThree.frame.height, height: imageBgThree.frame.height))
+        imageTreasureThree.image = UIImage(named: "coin")
+        vAnnounceThree.addSubview(imageTreasureThree)
+        
+        imageUserThree = UIImageView(frame: CGRect(x: imageTreasureThree.frame.origin.x + imageTreasureThree.frame.width, y: (imageTreasureThree.frame.height - (heightBg/2))/2 + 2, width: heightBg/2, height: heightBg/2))
+        imageUserThree.image = UIImage(named: "coin")
+        imageUserThree.contentMode = .scaleAspectFill
+        vAnnounceThree.addSubview(imageUserThree)
+        
+        xSpace = imageUserThree.frame.origin.x + imageUserThree.frame.width
+        lbThree = UILabel(frame: CGRect(x: xSpace, y: imageUserThree.frame.origin.y, width: imageBgThree.frame.width - xSpace, height: imageUserThree.frame.height))
+        lbThree.backgroundColor = .clear
         lbThree.text = "ASL:KDJ:SALKD:LASKD:SAKD:OSAKD:LSAK:O"
         setupLabel(label: lbThree)
         vAnnounceThree.addSubview(lbThree)

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CE0765C1D5A18F55C18B31EF /* Pods_ForTestCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772101E27D4045F7D2BEB1A3 /* Pods_ForTestCode.framework */; };
 		D73DF6242AD6BAE100C06CC4 /* ShowGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */; };
+		D7B215D72AD799F10030EA4D /* GiftListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B215D52AD799F10030EA4D /* GiftListVC.swift */; };
+		D7B215D82AD799F10030EA4D /* GiftListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B215D62AD799F10030EA4D /* GiftListVC.xib */; };
 		D7D7AD752AD55A2300647055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD742AD55A2300647055 /* Assets.xcassets */; };
 		D7D7AD782AD55A2300647055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD762AD55A2300647055 /* LaunchScreen.storyboard */; };
 		D7D7AD912AD55A3B00647055 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7AD812AD55A3800647055 /* Extension.swift */; };
@@ -27,7 +29,6 @@
 		D7D7ADB32AD6B57500647055 /* AnimateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADB22AD6B57500647055 /* AnimateVC.swift */; };
 		D7D7ADB72AD6B85E00647055 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADB52AD6B85E00647055 /* PopoverViewController.swift */; };
 		D7D7ADB82AD6B85E00647055 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7ADB62AD6B85E00647055 /* PopoverViewController.xib */; };
-		D7D7ADBC2AD6B89200647055 /* GiftListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADBB2AD6B89200647055 /* GiftListVC.swift */; };
 		D7D7ADC02AD6B8F700647055 /* RowGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */; };
 		D7D7ADC12AD6B8F700647055 /* RowGiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,8 @@
 		4AA4156DA9B8FA3CF6C28B0C /* Pods-ForTestCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForTestCode.debug.xcconfig"; path = "Target Support Files/Pods-ForTestCode/Pods-ForTestCode.debug.xcconfig"; sourceTree = "<group>"; };
 		772101E27D4045F7D2BEB1A3 /* Pods_ForTestCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForTestCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGiftView.swift; sourceTree = "<group>"; };
+		D7B215D52AD799F10030EA4D /* GiftListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftListVC.swift; sourceTree = "<group>"; };
+		D7B215D62AD799F10030EA4D /* GiftListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftListVC.xib; sourceTree = "<group>"; };
 		D7D7AD682AD55A2200647055 /* ForTestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForTestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D7AD742AD55A2300647055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7D7AD772AD55A2300647055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +61,6 @@
 		D7D7ADB22AD6B57500647055 /* AnimateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateVC.swift; sourceTree = "<group>"; };
 		D7D7ADB52AD6B85E00647055 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		D7D7ADB62AD6B85E00647055 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
-		D7D7ADBB2AD6B89200647055 /* GiftListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftListVC.swift; sourceTree = "<group>"; };
 		D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowGiftView.swift; sourceTree = "<group>"; };
 		D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RowGiftView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,16 @@
 				38D380721B5727C65F46165B /* Pods-ForTestCode.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7B215D22AD799560030EA4D /* GiftListView */ = {
+			isa = PBXGroup;
+			children = (
+				D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */,
+				D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */,
+				D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */,
+			);
+			path = GiftListView;
 			sourceTree = "<group>";
 		};
 		D7D7AD5F2AD55A2200647055 = {
@@ -109,10 +121,9 @@
 				D7D7AD822AD55A3800647055 /* AppDelegate.swift */,
 				D7D7AD842AD55A3900647055 /* Main.storyboard */,
 				D7D7AD8E2AD55A3B00647055 /* ViewController.swift */,
-				D7D7ADBB2AD6B89200647055 /* GiftListVC.swift */,
-				D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */,
-				D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */,
-				D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */,
+				D7B215D52AD799F10030EA4D /* GiftListVC.swift */,
+				D7B215D62AD799F10030EA4D /* GiftListVC.xib */,
+				D7B215D22AD799560030EA4D /* GiftListView */,
 				D7D7ADB22AD6B57500647055 /* AnimateVC.swift */,
 				D7D7ADB52AD6B85E00647055 /* PopoverViewController.swift */,
 				D7D7ADB62AD6B85E00647055 /* PopoverViewController.xib */,
@@ -213,6 +224,7 @@
 				D7D7AD962AD55A3B00647055 /* TableViewVC.xib in Resources */,
 				D7D7ADB82AD6B85E00647055 /* PopoverViewController.xib in Resources */,
 				D7D7AD942AD55A3B00647055 /* Main.storyboard in Resources */,
+				D7B215D82AD799F10030EA4D /* GiftListVC.xib in Resources */,
 				D7D7AD782AD55A2300647055 /* LaunchScreen.storyboard in Resources */,
 				D7D7AD9D2AD55A3B00647055 /* LabelAnnounce.xib in Resources */,
 				D7D7ADC12AD6B8F700647055 /* RowGiftView.xib in Resources */,
@@ -272,13 +284,13 @@
 			files = (
 				D7D7AD9E2AD55A3B00647055 /* ViewController.swift in Sources */,
 				D7D7AD992AD55A3B00647055 /* SceneDelegate.swift in Sources */,
-				D7D7ADBC2AD6B89200647055 /* GiftListVC.swift in Sources */,
 				D7D7AD972AD55A3B00647055 /* LabelAnnounce.swift in Sources */,
 				D7D7ADC02AD6B8F700647055 /* RowGiftView.swift in Sources */,
 				D7D7AD922AD55A3B00647055 /* AppDelegate.swift in Sources */,
 				D7D7AD9A2AD55A3B00647055 /* TableViewCenter.swift in Sources */,
 				D7D7ADB32AD6B57500647055 /* AnimateVC.swift in Sources */,
 				D73DF6242AD6BAE100C06CC4 /* ShowGiftView.swift in Sources */,
+				D7B215D72AD799F10030EA4D /* GiftListVC.swift in Sources */,
 				D7D7ADA52AD6940600647055 /* AnnounceView.swift in Sources */,
 				D7D7ADB72AD6B85E00647055 /* PopoverViewController.swift in Sources */,
 				D7D7AD9C2AD55A3B00647055 /* TableViewVC.swift in Sources */,

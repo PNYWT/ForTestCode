@@ -3,7 +3,7 @@ import UIKit
 struct Item {
     let id_gift: Int
     let user_id: String
-    var value: Double
+    var timeAdd: Double
     var count: Int
 }
 
@@ -35,7 +35,7 @@ class TableViewCenter: UITableView {
     
     func checkAndUpdateData() {
         let currentTime = Date().timeIntervalSince1970
-        let updatedItems = items.filter { currentTime - Double($0.value) < 5.00 }
+        let updatedItems = items.filter { currentTime - Double($0.timeAdd) < 5.00 }
         
         if items.count != updatedItems.count {
             items = updatedItems
@@ -46,7 +46,7 @@ class TableViewCenter: UITableView {
      func addItem(item: Item) {
          if let existingIndex = items.firstIndex(where: { $0.id_gift == item.id_gift && $0.user_id == item.user_id }) {
              let oldCount = items[existingIndex].count
-             items[existingIndex].value = Date().timeIntervalSince1970 + 2
+             items[existingIndex].timeAdd = Date().timeIntervalSince1970 + 2
              items[existingIndex].count += 1
              let updatedItem = items.remove(at: existingIndex)
              items.insert(updatedItem, at: 0)
@@ -69,7 +69,7 @@ class TableViewCenter: UITableView {
     
     
     func addItemByBtn() {
-        let newItem = Item(id_gift: idTest.randomElement()!, user_id: userTest.randomElement()!, value: Date().timeIntervalSince1970, count: 1)
+        let newItem = Item(id_gift: idTest.randomElement()!, user_id: userTest.randomElement()!, timeAdd: Date().timeIntervalSince1970, count: 1)
         addItem(item: newItem)
     }
     
