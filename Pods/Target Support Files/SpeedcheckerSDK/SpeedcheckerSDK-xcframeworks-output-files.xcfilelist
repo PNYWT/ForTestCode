@@ -1,0 +1,5 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK/DataCompression.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK/Socket.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK/SpeedcheckerReportSDK.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK/SpeedcheckerSDK.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK/XMLParsing.framework

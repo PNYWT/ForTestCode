@@ -7,4 +7,5 @@ target 'ForTestCode' do
 
   # Pods for ForTestCode
 pod 'MarqueeLabel/Swift'
+pod 'SpeedcheckerSDK'
 end

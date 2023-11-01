@@ -1,2 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-ForTestCode/Pods-ForTestCode-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK/DataCompression.framework/DataCompression
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK/Socket.framework/Socket
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK/SpeedcheckerReportSDK.framework/SpeedcheckerReportSDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK/SpeedcheckerSDK.framework/SpeedcheckerSDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK/XMLParsing.framework/XMLParsing

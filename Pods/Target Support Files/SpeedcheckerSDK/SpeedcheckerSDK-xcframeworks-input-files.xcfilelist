@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/SpeedcheckerSDK/SpeedcheckerSDK-xcframeworks.sh
+${PODS_ROOT}/SpeedcheckerSDK/Framework/DataCompression.xcframework
+${PODS_ROOT}/SpeedcheckerSDK/Framework/Socket.xcframework
+${PODS_ROOT}/SpeedcheckerSDK/Framework/SpeedcheckerReportSDK.xcframework
+${PODS_ROOT}/SpeedcheckerSDK/Framework/SpeedcheckerSDK.xcframework
+${PODS_ROOT}/SpeedcheckerSDK/Framework/XMLParsing.xcframework

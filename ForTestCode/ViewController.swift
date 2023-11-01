@@ -6,8 +6,15 @@
 //
 
 import UIKit
+import SpeedcheckerSDK
+import CoreLocation
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var btnSpeedTest: UIButton!
+    @IBOutlet weak var lbSpeedTest: UILabel!
+    private var internetTest: InternetSpeedTest?
+    private var locationManager = CLLocationManager()
     
     @IBOutlet weak var btnAnimate: UIButton!
     @IBOutlet weak var btnGiftList: UIButton!
@@ -17,11 +24,38 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        requestLocationAuthorization()
+        
         openTableView.addTarget(self, action: #selector(actionTableView), for: .touchUpInside)
         btnCointBurst.addTarget(self, action: #selector(animateCoinsBurst), for: .touchUpInside)
         
         btnAnimate.addTarget(self, action: #selector(actionAnimate), for: .touchUpInside)
         btnGiftList.addTarget(self, action: #selector(gotoGiftList), for: .touchUpInside)
+        btnSpeedTest.addTarget(self, action: #selector(speedTestAction), for: .touchUpInside)
+        lbSpeedTest.text = "<- Touch to check speed."
+
+    }
+    
+    @objc func speedTestAction(){
+        internetTest = InternetSpeedTest(delegate: self)
+        //check only download
+        internetTest?.startWithOptions(.init(uploadTimeMs: 0), { error in
+            if error != .ok {
+                print(error)
+            }
+        })
+    }
+    
+    private func requestLocationAuthorization() {
+        DispatchQueue.global().async {
+            guard CLLocationManager.locationServicesEnabled() else {
+                return
+            }
+            DispatchQueue.main.async { [weak self] in
+                self?.locationManager.requestWhenInUseAuthorization()
+                self?.locationManager.requestAlwaysAuthorization()
+            }
+        }
     }
     
     @objc func gotoGiftList(){
@@ -74,4 +108,46 @@ class ViewController: UIViewController {
 }
 
 
+extension ViewController: InternetSpeedTestDelegate{
+    func internetTestError(error: SpeedcheckerSDK.SpeedTestError) {
+       
+    }
+    
+    func internetTestFinish(result: SpeedcheckerSDK.SpeedTestResult) {
+        print("Done")
+        print("downloadSpeed \(result.downloadSpeed.mbps)")
+        print("uploadSpeed \(result.uploadSpeed.mbps)")
+        print("latencyInMs \(result.latencyInMs)")
+    }
+    
+    func internetTestReceived(servers: [SpeedcheckerSDK.SpeedTestServer]) {
+        
+    }
+    
+    func internetTestSelected(server: SpeedcheckerSDK.SpeedTestServer, latency: Int, jitter: Int) {
+        
+    }
+    
+    func internetTestDownloadStart() {
+    }
+    
+    func internetTestDownloadFinish() {
 
+    }
+    
+    func internetTestDownload(progress: Double, speed: SpeedcheckerSDK.SpeedTestSpeed) {
+        DispatchQueue.main.async {
+            self.lbSpeedTest.text = String(format: "Download: \n%@ Mbps", speed.descriptionInMbps)
+        }
+    }
+    
+    func internetTestUploadStart() {
+    }
+    
+    func internetTestUploadFinish() {
+    }
+    
+    func internetTestUpload(progress: Double, speed: SpeedcheckerSDK.SpeedTestSpeed) {
+        print("Upload: \(speed.descriptionInMbps)")
+    }
+}

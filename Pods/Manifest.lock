@@ -1,16 +1,20 @@
 PODS:
   - MarqueeLabel/Swift (3.2.1)
+  - SpeedcheckerSDK (1.8.13)
 
 DEPENDENCIES:
   - MarqueeLabel/Swift
+  - SpeedcheckerSDK
 
 SPEC REPOS:
   trunk:
     - MarqueeLabel
+    - SpeedcheckerSDK
 
 SPEC CHECKSUMS:
   MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
+  SpeedcheckerSDK: f9fab84fe3a63718053e643b8d00d31d06c9ed13
 
-PODFILE CHECKSUM: a9bc9ad69064c5c0ccd4bd7fe5238a27eeb0b88f
+PODFILE CHECKSUM: e839aa4d4407e7b11219cbc44f9aef3385e44ae3
 
 COCOAPODS: 1.11.3
