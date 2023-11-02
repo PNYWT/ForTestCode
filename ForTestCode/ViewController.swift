@@ -11,39 +11,34 @@ import CoreLocation
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var btnSpeedTest: UIButton!
+    private var arrData:[TypeModel] = []
+    
+    @IBOutlet weak var cltvGrid: UICollectionView!
+    private let cellReuseIdentifier = "GridBtnCell"
     @IBOutlet weak var lbSpeedTest: UILabel!
     private var internetTest: InternetSpeedTest?
     private var locationManager = CLLocationManager()
     
-    @IBOutlet weak var btnAnimate: UIButton!
-    @IBOutlet weak var btnGiftList: UIButton!
-    @IBOutlet weak var btnCointBurst: UIButton!
-    @IBOutlet weak var openTableView: UIButton!
-    @IBOutlet weak var popOver: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         requestLocationAuthorization()
-        
-        openTableView.addTarget(self, action: #selector(actionTableView), for: .touchUpInside)
-        btnCointBurst.addTarget(self, action: #selector(animateCoinsBurst), for: .touchUpInside)
-        
-        btnAnimate.addTarget(self, action: #selector(actionAnimate), for: .touchUpInside)
-        btnGiftList.addTarget(self, action: #selector(gotoGiftList), for: .touchUpInside)
-        btnSpeedTest.addTarget(self, action: #selector(speedTestAction), for: .touchUpInside)
-        lbSpeedTest.text = "<- Touch to check speed."
-
+        cltvGridSetup()
+        LoadData.readJsonTitle { dataMenu in
+            if let dataReturn = dataMenu{
+                self.arrData = dataReturn
+            }
+            DispatchQueue.main.async {
+                self.cltvGrid.reloadData()
+                self.lbSpeedTest.isHidden = true
+                self.internetTest = InternetSpeedTest(delegate: self)
+            }
+        }
     }
     
-    @objc func speedTestAction(){
-        internetTest = InternetSpeedTest(delegate: self)
-        //check only download
-        internetTest?.startWithOptions(.init(uploadTimeMs: 0), { error in
-            if error != .ok {
-                print(error)
-            }
-        })
+    private func cltvGridSetup(){
+        cltvGrid.delegate = self
+        cltvGrid.dataSource = self
+        cltvGrid.register(UINib(nibName: "CltvGridBtnCell", bundle: nil), forCellWithReuseIdentifier: cellReuseIdentifier)
     }
     
     private func requestLocationAuthorization() {
@@ -58,20 +53,6 @@ class ViewController: UIViewController {
         }
     }
     
-    @objc func gotoGiftList(){
-        let vc = GiftListVC()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @objc func actionAnimate(){
-        let vc = AnimateVC()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @objc func actionTableView(){
-        let vc = TableViewVC()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
     
     @objc func animateCoinsBurst() {
         let numberOfCoins = 50 // จำนวนเหรียญที่คุณต้องการให้พุ่ง
@@ -100,10 +81,93 @@ class ViewController: UIViewController {
             }
         }
     }
+}
+
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.arrData.count
+    }
     
-    @IBAction func showPopover(_ sender: UIButton) {
-        let popoverContent = PopoverViewController(infoText: "Username must be between 3-20 and can only consist of alphanumeric characters.")
-        presentPopover(self, popoverContent, sender: popOver, size: CGSize(width: 315, height: 120), arrowDirection: .down)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cellGrid = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! CltvGridBtnCell
+        cellGrid.lbTitle.text = arrData[indexPath.item].title
+        return cellGrid
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch arrData[indexPath.item].title{
+        case "RxSwift":
+            break
+        case "Collection":
+            let vc = CollectionViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case "SpeedTest":
+            //check only download
+            self.lbSpeedTest.isHidden = false
+            internetTest?.startWithOptions(.init(uploadTimeMs: 0), { error in
+                if error != .ok {
+                    print(error)
+                }
+            })
+            break
+        case "GiftList":
+            let vc = GiftListVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case "Animate":
+            let vc = AnimateVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case "TableView":
+            let vc = TableViewVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case "CoinBurst":
+            animateCoinsBurst()
+            break
+        case "PopOver":
+            if let sender = collectionView.cellForItem(at: indexPath){
+                let popoverContent = PopoverViewController(infoText: "Username must be between 3-20 and can only consist of alphanumeric characters.")
+                presentPopover(self, popoverContent, sender: sender, size: CGSize(width: 315, height: 120), arrowDirection: .down)
+            }
+            break
+        default:
+            break
+        }
+    }
+}
+
+extension ViewController:UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if let layout = cltvGrid.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .vertical
+            layout.estimatedItemSize = .zero
+            cltvGrid.collectionViewLayout = layout
+        }
+        
+        let columns = 4
+        let spacingItem  = 8
+        let sectionInsets = UIEdgeInsets.zero
+        let paddingSpace = sectionInsets.left + sectionInsets.right + (CGFloat(spacingItem) * CGFloat(columns - 1))
+        let availableWidth = cltvGrid.frame.width - paddingSpace
+        let widthPerItem = (availableWidth / CGFloat(columns)) - 1
+        cltvGrid.contentInset = UIEdgeInsets.zero
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 8
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout
+                        collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 8
     }
 }
 

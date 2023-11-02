@@ -8,6 +8,8 @@
 import UIKit
 import MarqueeLabel
 
+//MARK: Use MarqueeLabel
+
 class LabelAnnounce: UIView {
 
     @IBOutlet var vNib: UIView!

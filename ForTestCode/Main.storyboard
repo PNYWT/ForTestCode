@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,69 +17,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="YPx-kM-hRU">
-                                <rect key="frame" x="144" y="277.66666666666669" width="105.33333333333331" height="366.00000000000006"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0Q-tF-loD">
-                                        <rect key="frame" x="0.0" y="0.0" width="105.33333333333333" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="SpeedTest"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGU-Nq-fUK">
-                                        <rect key="frame" x="13.333333333333343" y="66.333333333333314" width="78.666666666666671" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="GiftList"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dub-VV-7C8">
-                                        <rect key="frame" x="9.3333333333333428" y="132.66666666666663" width="86.666666666666671" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Animate"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRg-cE-RZJ">
-                                        <rect key="frame" x="2" y="199" width="101" height="34.333333333333343"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="TableView"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JP-et-0Sv">
-                                        <rect key="frame" x="7.3333333333333428" y="265.33333333333331" width="90.333333333333329" height="34.333333333333314"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="PopOver"/>
-                                        <connections>
-                                            <action selector="showPopover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eG4-ca-X6d"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiQ-ND-syy">
-                                        <rect key="frame" x="0.33333333333334281" y="331.66666666666669" width="104.66666666666667" height="34.333333333333314"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="CointBurst"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1An-9q-Iup">
-                                <rect key="frame" x="253.33333333333334" y="284.66666666666669" width="41.333333333333343" height="20.333333333333314"/>
+                                <rect key="frame" x="176" y="82.666666666666671" width="41.333333333333343" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bs5-LJ-glo">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E3M-af-JGN">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wpe-P1-tcI">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BaC-HI-yEV">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YPx-kM-hRU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="BVa-hd-6qt"/>
-                            <constraint firstItem="1An-9q-Iup" firstAttribute="leading" secondItem="YPx-kM-hRU" secondAttribute="trailing" constant="4" id="DIt-T1-59T"/>
-                            <constraint firstItem="1An-9q-Iup" firstAttribute="centerY" secondItem="w0Q-tF-loD" secondAttribute="centerY" id="RHw-o1-ntW"/>
-                            <constraint firstItem="YPx-kM-hRU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pXc-ds-feV"/>
+                            <constraint firstItem="bs5-LJ-glo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IJU-yo-JzQ"/>
+                            <constraint firstItem="bs5-LJ-glo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qc2-mT-5gP"/>
+                            <constraint firstItem="1An-9q-Iup" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TD8-px-kQc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bs5-LJ-glo" secondAttribute="trailing" id="hdj-x6-BNZ"/>
+                            <constraint firstItem="1An-9q-Iup" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="top" id="owb-T3-ywl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bs5-LJ-glo" secondAttribute="bottom" id="tC8-Fv-f0l"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XG8-AS-6sQ"/>
                     <connections>
-                        <outlet property="btnAnimate" destination="Dub-VV-7C8" id="1bN-16-7cm"/>
-                        <outlet property="btnCointBurst" destination="JiQ-ND-syy" id="PxN-es-MMS"/>
-                        <outlet property="btnGiftList" destination="KGU-Nq-fUK" id="zks-BC-B4g"/>
-                        <outlet property="btnSpeedTest" destination="w0Q-tF-loD" id="NUA-af-zfv"/>
+                        <outlet property="cltvGrid" destination="bs5-LJ-glo" id="Pwb-PU-TXE"/>
                         <outlet property="lbSpeedTest" destination="1An-9q-Iup" id="9kv-Vo-ghf"/>
-                        <outlet property="openTableView" destination="CRg-cE-RZJ" id="PTf-v6-Rdx"/>
-                        <outlet property="popOver" destination="7JP-et-0Sv" id="TNw-Zk-zHK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

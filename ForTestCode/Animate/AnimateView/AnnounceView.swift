@@ -7,6 +7,8 @@
 
 import UIKit
 
+//MARK: Use View
+
 class AnnounceView: UIView {
 
     private let screenHeight = UIScreen.main.bounds.size.height

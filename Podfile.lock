@@ -1,20 +1,34 @@
 PODS:
   - MarqueeLabel/Swift (3.2.1)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
   - SpeedcheckerSDK (1.8.13)
 
 DEPENDENCIES:
   - MarqueeLabel/Swift
+  - RxCocoa
+  - RxSwift
   - SpeedcheckerSDK
 
 SPEC REPOS:
   trunk:
     - MarqueeLabel
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SpeedcheckerSDK
 
 SPEC CHECKSUMS:
   MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
   SpeedcheckerSDK: f9fab84fe3a63718053e643b8d00d31d06c9ed13
 
-PODFILE CHECKSUM: e839aa4d4407e7b11219cbc44f9aef3385e44ae3
+PODFILE CHECKSUM: 23922afd50a1012e9c251030ff2e27683e4649b0
 
 COCOAPODS: 1.11.3
