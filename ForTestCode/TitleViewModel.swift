@@ -9,23 +9,28 @@ import Foundation
 
 class LoadData{
     
-    static func readJsonTitle(completeReadHeader:@escaping(_ dataMenu:[TypeModel]?)->Void) -> Void {
-        do {
-            
-            if let bundlePath = Bundle.main.path(forResource: "jsonTitle",
-                                                 ofType: "json"),
-                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
-    
-                
-                let jsonModel = try JSONDecoder().decode(DataModel.self,
-                                                           from: jsonData)
-                if let dataDecoder = jsonModel.arrData{
-                    completeReadHeader(dataDecoder)
+    static func readJsonTitle(completeReadData:@escaping(_ dataMenu:[TypeModel]?)->Void , updateUI: @escaping ((_ canUpdate:Bool) -> Void)) {
+        DispatchQueue.global(qos: .background).async {
+            do {
+                if let bundlePath = Bundle.main.path(forResource: "jsonTitle", ofType: "json"),
+                   let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                    let jsonModel = try JSONDecoder().decode(DataModel.self, from: jsonData)
+                    if let dataDecoder = jsonModel.arrData {
+                        DispatchQueue.main.async {
+                            completeReadData(dataDecoder)
+                        }
+                    }
+                }
+                DispatchQueue.main.async {
+                    updateUI(true)
+                }
+            } catch {
+                print("Error decoding JSON: \(error)")
+                DispatchQueue.main.async {
+                    completeReadData(nil)
+                    updateUI(false)
                 }
             }
-        } catch {
-            completeReadHeader(nil)
-            print("Error decoding JSON: \(error)")
         }
     }
 }

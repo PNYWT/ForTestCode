@@ -27,12 +27,26 @@ class ViewController: UIViewController {
             if let dataReturn = dataMenu{
                 self.arrData = dataReturn
             }
-            DispatchQueue.main.async {
+        } updateUI: { canUpdate in
+            if canUpdate{
                 self.cltvGrid.reloadData()
                 self.lbSpeedTest.isHidden = true
                 self.internetTest = InternetSpeedTest(delegate: self)
+            }else{
+                print("Load fail. UIShow No Data.")
             }
         }
+
+//        LoadData.readJsonTitle { dataMenu in
+//            if let dataReturn = dataMenu{
+//                self.arrData = dataReturn
+//            }
+//            DispatchQueue.main.async {
+//                self.cltvGrid.reloadData()
+//                self.lbSpeedTest.isHidden = true
+//                self.internetTest = InternetSpeedTest(delegate: self)
+//            }
+//        }
     }
     
     private func cltvGridSetup(){
@@ -132,6 +146,14 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
                 presentPopover(self, popoverContent, sender: sender, size: CGSize(width: 315, height: 120), arrowDirection: .down)
             }
             break
+            
+        case "Label Link":
+            let vc = LabelLinkVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case "TableViewReadMore":
+            let vc = TableViewReadMore()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

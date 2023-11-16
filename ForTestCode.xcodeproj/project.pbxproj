@@ -18,6 +18,7 @@
 		D78769842AF37C0300E01A3D /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78769832AF37C0300E01A3D /* TitleViewModel.swift */; };
 		D78769872AF380D200E01A3D /* CltvGridBtnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78769852AF380D200E01A3D /* CltvGridBtnCell.swift */; };
 		D78769882AF380D200E01A3D /* CltvGridBtnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D78769862AF380D200E01A3D /* CltvGridBtnCell.xib */; };
+		D7A2D6622B0320A700A3B1BD /* LabelLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A2D6612B0320A700A3B1BD /* LabelLinkVC.swift */; };
 		D7B215D72AD799F10030EA4D /* GiftListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B215D52AD799F10030EA4D /* GiftListVC.swift */; };
 		D7B215D82AD799F10030EA4D /* GiftListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B215D62AD799F10030EA4D /* GiftListVC.xib */; };
 		D7D7AD752AD55A2300647055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D7AD742AD55A2300647055 /* Assets.xcassets */; };
@@ -40,6 +41,9 @@
 		D7D7ADB82AD6B85E00647055 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7ADB62AD6B85E00647055 /* PopoverViewController.xib */; };
 		D7D7ADC02AD6B8F700647055 /* RowGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */; };
 		D7D7ADC12AD6B8F700647055 /* RowGiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */; };
+		D7FAD0A12B0363E100C49BD1 /* TableViewReadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FAD0A02B0363E100C49BD1 /* TableViewReadMore.swift */; };
+		D7FAD0A42B036AEC00C49BD1 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FAD0A22B036AEC00C49BD1 /* CustomTableViewCell.swift */; };
+		D7FAD0A52B036AEC00C49BD1 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7FAD0A32B036AEC00C49BD1 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,7 @@
 		D78769832AF37C0300E01A3D /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		D78769852AF380D200E01A3D /* CltvGridBtnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CltvGridBtnCell.swift; sourceTree = "<group>"; };
 		D78769862AF380D200E01A3D /* CltvGridBtnCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CltvGridBtnCell.xib; sourceTree = "<group>"; };
+		D7A2D6612B0320A700A3B1BD /* LabelLinkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLinkVC.swift; sourceTree = "<group>"; };
 		D7B215D52AD799F10030EA4D /* GiftListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftListVC.swift; sourceTree = "<group>"; };
 		D7B215D62AD799F10030EA4D /* GiftListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftListVC.xib; sourceTree = "<group>"; };
 		D7D7AD682AD55A2200647055 /* ForTestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForTestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +86,9 @@
 		D7D7ADB62AD6B85E00647055 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowGiftView.swift; sourceTree = "<group>"; };
 		D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RowGiftView.xib; sourceTree = "<group>"; };
+		D7FAD0A02B0363E100C49BD1 /* TableViewReadMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewReadMore.swift; sourceTree = "<group>"; };
+		D7FAD0A22B036AEC00C49BD1 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D7FAD0A32B036AEC00C49BD1 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +174,14 @@
 			path = Popover;
 			sourceTree = "<group>";
 		};
+		D7A2D6602B03209000A3B1BD /* Label Link */ = {
+			isa = PBXGroup;
+			children = (
+				D7A2D6612B0320A700A3B1BD /* LabelLinkVC.swift */,
+			);
+			path = "Label Link";
+			sourceTree = "<group>";
+		};
 		D7B215D22AD799560030EA4D /* GiftListView */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +224,8 @@
 				D78769682AF1FA7C00E01A3D /* CollectionView */,
 				D7B215D22AD799560030EA4D /* GiftListView */,
 				D7D7ADB42AD6B59300647055 /* Animate */,
+				D7A2D6602B03209000A3B1BD /* Label Link */,
+				D7FAD09F2B0363D100C49BD1 /* TableViewReadMore */,
 				D7D7AD892AD55A3A00647055 /* SceneDelegate.swift */,
 				D787697F2AF37A7800E01A3D /* jsonTitle.json */,
 				D7D7AD742AD55A2300647055 /* Assets.xcassets */,
@@ -225,6 +243,16 @@
 				D787697B2AF3783300E01A3D /* AnimateView */,
 			);
 			path = Animate;
+			sourceTree = "<group>";
+		};
+		D7FAD09F2B0363D100C49BD1 /* TableViewReadMore */ = {
+			isa = PBXGroup;
+			children = (
+				D7FAD0A02B0363E100C49BD1 /* TableViewReadMore.swift */,
+				D7FAD0A22B036AEC00C49BD1 /* CustomTableViewCell.swift */,
+				D7FAD0A32B036AEC00C49BD1 /* CustomTableViewCell.xib */,
+			);
+			path = TableViewReadMore;
 			sourceTree = "<group>";
 		};
 		E92DEC0C7F4B973FE03AD4FC /* Frameworks */ = {
@@ -305,6 +333,7 @@
 				D7B215D82AD799F10030EA4D /* GiftListVC.xib in Resources */,
 				D7D7AD782AD55A2300647055 /* LaunchScreen.storyboard in Resources */,
 				D7D7AD9D2AD55A3B00647055 /* LabelAnnounce.xib in Resources */,
+				D7FAD0A52B036AEC00C49BD1 /* CustomTableViewCell.xib in Resources */,
 				D78769672AF1F9D400E01A3D /* CollectionViewController.xib in Resources */,
 				D7D7ADC12AD6B8F700647055 /* RowGiftView.xib in Resources */,
 				D7D7AD752AD55A2300647055 /* Assets.xcassets in Resources */,
@@ -376,7 +405,10 @@
 				D787696B2AF1FA9800E01A3D /* CollectionViewCell.swift in Sources */,
 				D7D7ADA52AD6940600647055 /* AnnounceView.swift in Sources */,
 				D7D7ADB72AD6B85E00647055 /* PopoverViewController.swift in Sources */,
+				D7A2D6622B0320A700A3B1BD /* LabelLinkVC.swift in Sources */,
 				D7D7AD9C2AD55A3B00647055 /* TableViewVC.swift in Sources */,
+				D7FAD0A42B036AEC00C49BD1 /* CustomTableViewCell.swift in Sources */,
+				D7FAD0A12B0363E100C49BD1 /* TableViewReadMore.swift in Sources */,
 				D7D7AD952AD55A3B00647055 /* MyTableViewCell.swift in Sources */,
 				D7D7AD912AD55A3B00647055 /* Extension.swift in Sources */,
 				D78769842AF37C0300E01A3D /* TitleViewModel.swift in Sources */,
