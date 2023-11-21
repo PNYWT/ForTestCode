@@ -154,6 +154,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
         case "TableViewReadMore":
             let vc = TableViewReadMore()
             self.navigationController?.pushViewController(vc, animated: true)
+        case "Play .webp":
+            let vc = PlayWebpVC()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE0765C1D5A18F55C18B31EF /* Pods_ForTestCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772101E27D4045F7D2BEB1A3 /* Pods_ForTestCode.framework */; };
+		1014D90B4C20DCBD0FA762A9 /* Pods_ForTestCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AA16F900D583DF7FCAEFA5 /* Pods_ForTestCode.framework */; };
 		D73DF6242AD6BAE100C06CC4 /* ShowGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */; };
 		D78769662AF1F9D400E01A3D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78769642AF1F9D400E01A3D /* CollectionViewController.swift */; };
 		D78769672AF1F9D400E01A3D /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D78769652AF1F9D400E01A3D /* CollectionViewController.xib */; };
@@ -44,12 +44,13 @@
 		D7FAD0A12B0363E100C49BD1 /* TableViewReadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FAD0A02B0363E100C49BD1 /* TableViewReadMore.swift */; };
 		D7FAD0A42B036AEC00C49BD1 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FAD0A22B036AEC00C49BD1 /* CustomTableViewCell.swift */; };
 		D7FAD0A52B036AEC00C49BD1 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7FAD0A32B036AEC00C49BD1 /* CustomTableViewCell.xib */; };
+		D7FAD0A92B070C2800C49BD1 /* PlayWebpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FAD0A82B070C2800C49BD1 /* PlayWebpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38D380721B5727C65F46165B /* Pods-ForTestCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForTestCode.release.xcconfig"; path = "Target Support Files/Pods-ForTestCode/Pods-ForTestCode.release.xcconfig"; sourceTree = "<group>"; };
 		4AA4156DA9B8FA3CF6C28B0C /* Pods-ForTestCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForTestCode.debug.xcconfig"; path = "Target Support Files/Pods-ForTestCode/Pods-ForTestCode.debug.xcconfig"; sourceTree = "<group>"; };
-		772101E27D4045F7D2BEB1A3 /* Pods_ForTestCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForTestCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3AA16F900D583DF7FCAEFA5 /* Pods_ForTestCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForTestCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGiftView.swift; sourceTree = "<group>"; };
 		D78769642AF1F9D400E01A3D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		D78769652AF1F9D400E01A3D /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		D7FAD0A02B0363E100C49BD1 /* TableViewReadMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewReadMore.swift; sourceTree = "<group>"; };
 		D7FAD0A22B036AEC00C49BD1 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D7FAD0A32B036AEC00C49BD1 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		D7FAD0A82B070C2800C49BD1 /* PlayWebpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayWebpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0765C1D5A18F55C18B31EF /* Pods_ForTestCode.framework in Frameworks */,
+				1014D90B4C20DCBD0FA762A9 /* Pods_ForTestCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +243,7 @@
 			children = (
 				D787697A2AF377C400E01A3D /* AnimateAnnounce */,
 				D787697B2AF3783300E01A3D /* AnimateView */,
+				D7FAD0A82B070C2800C49BD1 /* PlayWebpVC.swift */,
 			);
 			path = Animate;
 			sourceTree = "<group>";
@@ -258,7 +261,7 @@
 		E92DEC0C7F4B973FE03AD4FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				772101E27D4045F7D2BEB1A3 /* Pods_ForTestCode.framework */,
+				D3AA16F900D583DF7FCAEFA5 /* Pods_ForTestCode.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -274,7 +277,7 @@
 				D7D7AD642AD55A2200647055 /* Sources */,
 				D7D7AD652AD55A2200647055 /* Frameworks */,
 				D7D7AD662AD55A2200647055 /* Resources */,
-				044E8E2448A2DC4002355763 /* [CP] Embed Pods Frameworks */,
+				B8392FDF19E8C3A3872D75BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,23 +347,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		044E8E2448A2DC4002355763 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ForTestCode/Pods-ForTestCode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ForTestCode/Pods-ForTestCode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForTestCode/Pods-ForTestCode-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9BB7F2B1F9A3491A2AA60427 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,6 +369,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B8392FDF19E8C3A3872D75BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForTestCode/Pods-ForTestCode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForTestCode/Pods-ForTestCode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForTestCode/Pods-ForTestCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -396,6 +399,7 @@
 				D7D7ADC02AD6B8F700647055 /* RowGiftView.swift in Sources */,
 				D78769872AF380D200E01A3D /* CltvGridBtnCell.swift in Sources */,
 				D7D7AD922AD55A3B00647055 /* AppDelegate.swift in Sources */,
+				D7FAD0A92B070C2800C49BD1 /* PlayWebpVC.swift in Sources */,
 				D7D7AD9A2AD55A3B00647055 /* TableViewCenter.swift in Sources */,
 				D78769822AF37BE300E01A3D /* JsonTitleModel.swift in Sources */,
 				D7D7ADB32AD6B57500647055 /* AnimateVC.swift in Sources */,
@@ -552,6 +556,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FLAnimatedImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MarqueeLabel\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"\"${PODS_ROOT}/SpeedcheckerSDK/Framework\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ForTestCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -583,6 +597,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FLAnimatedImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MarqueeLabel\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"\"${PODS_ROOT}/SpeedcheckerSDK/Framework\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/SpeedcheckerSDK\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ForTestCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

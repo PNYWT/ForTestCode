@@ -1,4 +1,16 @@
 PODS:
+  - libwebp (1.3.2):
+    - libwebp/demux (= 1.3.2)
+    - libwebp/mux (= 1.3.2)
+    - libwebp/sharpyuv (= 1.3.2)
+    - libwebp/webp (= 1.3.2)
+  - libwebp/demux (1.3.2):
+    - libwebp/webp
+  - libwebp/mux (1.3.2):
+    - libwebp/demux
+  - libwebp/sharpyuv (1.3.2)
+  - libwebp/webp (1.3.2):
+    - libwebp/sharpyuv
   - MarqueeLabel/Swift (3.2.1)
   - RxCocoa (6.6.0):
     - RxRelay (= 6.6.0)
@@ -6,29 +18,43 @@ PODS:
   - RxRelay (6.6.0):
     - RxSwift (= 6.6.0)
   - RxSwift (6.6.0)
+  - SDWebImage (5.18.3):
+    - SDWebImage/Core (= 5.18.3)
+  - SDWebImage/Core (5.18.3)
+  - SDWebImageWebPCoder (0.14.2):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.17)
   - SpeedcheckerSDK (1.8.13)
 
 DEPENDENCIES:
   - MarqueeLabel/Swift
   - RxCocoa
   - RxSwift
+  - SDWebImage
+  - SDWebImageWebPCoder
   - SpeedcheckerSDK
 
 SPEC REPOS:
   trunk:
+    - libwebp
     - MarqueeLabel
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SDWebImage
+    - SDWebImageWebPCoder
     - SpeedcheckerSDK
 
 SPEC CHECKSUMS:
+  libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
   MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
+  SDWebImageWebPCoder: 633b813fca24f1de5e076bcd7f720c038b23892b
   SpeedcheckerSDK: f9fab84fe3a63718053e643b8d00d31d06c9ed13
 
-PODFILE CHECKSUM: 9b474ed52cd84486ec43fff03dc9d9b3a6ddca6a
+PODFILE CHECKSUM: 4f53526bd370520cc64c99df98f56500cd26acfb
 
 COCOAPODS: 1.11.3
