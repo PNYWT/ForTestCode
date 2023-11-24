@@ -80,3 +80,28 @@ extension UIViewController{
         return 44
     }
 }
+
+extension JSONDecoder {
+
+    func decodeToAnyString<T: Decodable>(_ type: T.Type, from data: Data) throws -> T {
+        let anyData = try JSONSerialization.jsonObject(with: data, options: [])
+        let stringData = convertAnyToString(anyData)
+        let convertedData = try JSONSerialization.data(withJSONObject: stringData, options: [])
+        return try self.decode(T.self, from: convertedData)
+    }
+
+    private func convertAnyToString(_ value: Any) -> Any {
+        switch value {
+        case let stringValue as String:
+            return stringValue
+        case let numberValue as NSNumber:
+            return numberValue.stringValue
+        case let arrayValue as [Any]:
+            return arrayValue.map(convertAnyToString)
+        case let dictionaryValue as [String: Any]:
+            return dictionaryValue.mapValues(convertAnyToString)
+        default:
+            return "\(value)"
+        }
+    }
+}

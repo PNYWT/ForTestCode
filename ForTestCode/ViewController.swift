@@ -36,17 +36,6 @@ class ViewController: UIViewController {
                 print("Load fail. UIShow No Data.")
             }
         }
-
-//        LoadData.readJsonTitle { dataMenu in
-//            if let dataReturn = dataMenu{
-//                self.arrData = dataReturn
-//            }
-//            DispatchQueue.main.async {
-//                self.cltvGrid.reloadData()
-//                self.lbSpeedTest.isHidden = true
-//                self.internetTest = InternetSpeedTest(delegate: self)
-//            }
-//        }
     }
     
     private func cltvGridSetup(){
@@ -105,6 +94,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellGrid = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! CltvGridBtnCell
         cellGrid.lbTitle.text = arrData[indexPath.item].title
+        cellGrid.lbTitle.textAlignment = .center
+        cellGrid.lbTitle.numberOfLines = 0
         return cellGrid
     }
     
@@ -154,9 +145,15 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
         case "TableViewReadMore":
             let vc = TableViewReadMore()
             self.navigationController?.pushViewController(vc, animated: true)
+            break
         case "Play .webp":
             let vc = PlayWebpVC()
             self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case "MVVM":
+            let vc = MVVMShowDataVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
         default:
             break
         }

@@ -12,6 +12,8 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod 'SDWebImage'
 pod 'SDWebImageWebPCoder'
+pod 'Alamofire'
+pod 'ProgressHUD'
 
 end
 

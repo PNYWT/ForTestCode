@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.8.1)
   - libwebp (1.3.2):
     - libwebp/demux (= 1.3.2)
     - libwebp/mux (= 1.3.2)
@@ -12,22 +13,25 @@ PODS:
   - libwebp/webp (1.3.2):
     - libwebp/sharpyuv
   - MarqueeLabel/Swift (3.2.1)
+  - ProgressHUD (14.1.0)
   - RxCocoa (6.6.0):
     - RxRelay (= 6.6.0)
     - RxSwift (= 6.6.0)
   - RxRelay (6.6.0):
     - RxSwift (= 6.6.0)
   - RxSwift (6.6.0)
-  - SDWebImage (5.18.3):
-    - SDWebImage/Core (= 5.18.3)
-  - SDWebImage/Core (5.18.3)
+  - SDWebImage (5.18.5):
+    - SDWebImage/Core (= 5.18.5)
+  - SDWebImage/Core (5.18.5)
   - SDWebImageWebPCoder (0.14.2):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.17)
   - SpeedcheckerSDK (1.8.13)
 
 DEPENDENCIES:
+  - Alamofire
   - MarqueeLabel/Swift
+  - ProgressHUD
   - RxCocoa
   - RxSwift
   - SDWebImage
@@ -36,8 +40,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - libwebp
     - MarqueeLabel
+    - ProgressHUD
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -46,15 +52,17 @@ SPEC REPOS:
     - SpeedcheckerSDK
 
 SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
   MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
+  ProgressHUD: c4a55f108815c46a6bf082407d2f806840b7a869
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
-  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
+  SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
   SDWebImageWebPCoder: 633b813fca24f1de5e076bcd7f720c038b23892b
   SpeedcheckerSDK: f9fab84fe3a63718053e643b8d00d31d06c9ed13
 
-PODFILE CHECKSUM: 4f53526bd370520cc64c99df98f56500cd26acfb
+PODFILE CHECKSUM: 9b8971413b9f12529feffe0ac3d4d6ea8f40d049
 
 COCOAPODS: 1.11.3
