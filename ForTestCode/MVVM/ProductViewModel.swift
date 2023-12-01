@@ -33,8 +33,6 @@ class ProductViewModel:NSObject{
             if let dataReturn = successData{
                 do {
                     let productsModel = try JSONDecoder().decodeToAnyString(ProductsModel.self, from: dataReturn)
-//                    print("productsModel -> \(productsModel)")
-//                    print("productsModel.products[0].images -> \(productsModel.products[0].images)")
                     self.dataProducts = productsModel.products
                     completionBlock(true)
                 } catch {

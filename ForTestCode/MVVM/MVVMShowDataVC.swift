@@ -5,12 +5,15 @@
 //  Created by Dev on 22/11/2566 BE.
 //
 
+class ConfigApp{
+    static let showLog = true
+}
+
 import Foundation
 import UIKit
 
 class MVVMShowDataVC:UIViewController{
     
-//    private var tbvShow:UITableView!
     private var productManagement:ProductViewModel!
     
     override func viewDidLoad() {
