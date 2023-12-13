@@ -65,6 +65,13 @@ extension UIViewController{
         return 44
     }
     
+    func getNavigationBarOriginalY() -> CGFloat {
+        if let navigationController = self.navigationController {
+            return navigationController.navigationBar.frame.origin.y
+        }
+        return 50
+    }
+    
     func getTabbarBarHeight() -> CGFloat {
         if let navigationController = self.navigationController {
             return navigationController.tabBarController?.tabBar.frame.height ?? 0

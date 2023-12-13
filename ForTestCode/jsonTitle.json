@@ -1,11 +1,12 @@
 {
     "data": [
+        {"title":"SingleRowColumnCltv"},
         {"title":"MVVM"},
         {"title":"Play .webp"},
         {"title":"TableViewReadMore"},
         {"title": "Label Link"},
         {"title": "RxSwift"},
-        {"title": "Collection"},
+        {"title": "Collection FullScreen"},
         {"title": "SpeedTest"},
         {"title": "GiftList"},
         {"title": "Animate"},

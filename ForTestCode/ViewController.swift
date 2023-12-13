@@ -101,9 +101,13 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch arrData[indexPath.item].title{
+        case "SingleRowColumnCltv":
+            let vc = SingleRowColumnCltvVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
         case "RxSwift":
             break
-        case "Collection":
+        case "Collection FullScreen":
             let vc = CollectionViewController()
             self.navigationController?.pushViewController(vc, animated: true)
             break

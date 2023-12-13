@@ -47,6 +47,10 @@
 		D7D7ADB82AD6B85E00647055 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7ADB62AD6B85E00647055 /* PopoverViewController.xib */; };
 		D7D7ADC02AD6B8F700647055 /* RowGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */; };
 		D7D7ADC12AD6B8F700647055 /* RowGiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */; };
+		D7F902AB2B296BB800653927 /* SingleRowColumnCltvVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F902AA2B296BB800653927 /* SingleRowColumnCltvVC.swift */; };
+		D7F902AD2B296C1A00653927 /* SingleRowColumnCltv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F902AC2B296C1A00653927 /* SingleRowColumnCltv.swift */; };
+		D7F902B12B2987A400653927 /* BoxRandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F902B02B2987A400653927 /* BoxRandomView.swift */; };
+		D7F902B32B2987FC00653927 /* TopRandomBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F902B22B2987FC00653927 /* TopRandomBoxView.swift */; };
 		D7FAD0A12B0363E100C49BD1 /* TableViewReadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FAD0A02B0363E100C49BD1 /* TableViewReadMore.swift */; };
 		D7FAD0A42B036AEC00C49BD1 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FAD0A22B036AEC00C49BD1 /* CustomTableViewCell.swift */; };
 		D7FAD0A52B036AEC00C49BD1 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7FAD0A32B036AEC00C49BD1 /* CustomTableViewCell.xib */; };
@@ -99,6 +103,10 @@
 		D7D7ADB62AD6B85E00647055 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		D7D7ADBD2AD6B8F700647055 /* RowGiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowGiftView.swift; sourceTree = "<group>"; };
 		D7D7ADBE2AD6B8F700647055 /* RowGiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RowGiftView.xib; sourceTree = "<group>"; };
+		D7F902AA2B296BB800653927 /* SingleRowColumnCltvVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRowColumnCltvVC.swift; sourceTree = "<group>"; };
+		D7F902AC2B296C1A00653927 /* SingleRowColumnCltv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRowColumnCltv.swift; sourceTree = "<group>"; };
+		D7F902B02B2987A400653927 /* BoxRandomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxRandomView.swift; sourceTree = "<group>"; };
+		D7F902B22B2987FC00653927 /* TopRandomBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRandomBoxView.swift; sourceTree = "<group>"; };
 		D7FAD0A02B0363E100C49BD1 /* TableViewReadMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewReadMore.swift; sourceTree = "<group>"; };
 		D7FAD0A22B036AEC00C49BD1 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D7FAD0A32B036AEC00C49BD1 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
@@ -142,10 +150,8 @@
 		D78769682AF1FA7C00E01A3D /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				D78769642AF1F9D400E01A3D /* CollectionViewController.swift */,
-				D78769652AF1F9D400E01A3D /* CollectionViewController.xib */,
-				D78769692AF1FA9800E01A3D /* CollectionViewCell.swift */,
-				D787696A2AF1FA9800E01A3D /* CollectionViewCell.xib */,
+				D7F902A92B296B5500653927 /* Collection 1 Row 1 Col */,
+				D7F902A82B296B3800653927 /* Collection FullScreen */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -272,6 +278,28 @@
 				D7FAD0A82B070C2800C49BD1 /* PlayWebpVC.swift */,
 			);
 			path = Animate;
+			sourceTree = "<group>";
+		};
+		D7F902A82B296B3800653927 /* Collection FullScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D78769642AF1F9D400E01A3D /* CollectionViewController.swift */,
+				D78769652AF1F9D400E01A3D /* CollectionViewController.xib */,
+				D78769692AF1FA9800E01A3D /* CollectionViewCell.swift */,
+				D787696A2AF1FA9800E01A3D /* CollectionViewCell.xib */,
+			);
+			path = "Collection FullScreen";
+			sourceTree = "<group>";
+		};
+		D7F902A92B296B5500653927 /* Collection 1 Row 1 Col */ = {
+			isa = PBXGroup;
+			children = (
+				D7F902AA2B296BB800653927 /* SingleRowColumnCltvVC.swift */,
+				D7F902B22B2987FC00653927 /* TopRandomBoxView.swift */,
+				D7F902AC2B296C1A00653927 /* SingleRowColumnCltv.swift */,
+				D7F902B02B2987A400653927 /* BoxRandomView.swift */,
+			);
+			path = "Collection 1 Row 1 Col";
 			sourceTree = "<group>";
 		};
 		D7FAD09F2B0363D100C49BD1 /* TableViewReadMore */ = {
@@ -421,6 +449,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D7AD9E2AD55A3B00647055 /* ViewController.swift in Sources */,
+				D7F902B32B2987FC00653927 /* TopRandomBoxView.swift in Sources */,
+				D7F902AD2B296C1A00653927 /* SingleRowColumnCltv.swift in Sources */,
 				D716491E2B0DEC1F007454A8 /* MVVMShowDataVC.swift in Sources */,
 				D71649252B0F072D007454A8 /* ProductViewCell.swift in Sources */,
 				D7D7AD992AD55A3B00647055 /* SceneDelegate.swift in Sources */,
@@ -429,6 +459,7 @@
 				D78769872AF380D200E01A3D /* CltvGridBtnCell.swift in Sources */,
 				D7D7AD922AD55A3B00647055 /* AppDelegate.swift in Sources */,
 				D7FAD0A92B070C2800C49BD1 /* PlayWebpVC.swift in Sources */,
+				D7F902AB2B296BB800653927 /* SingleRowColumnCltvVC.swift in Sources */,
 				D7D7AD9A2AD55A3B00647055 /* TableViewCenter.swift in Sources */,
 				D71649222B0DEFB3007454A8 /* ProductViewModel.swift in Sources */,
 				D78769822AF37BE300E01A3D /* JsonTitleModel.swift in Sources */,
@@ -445,6 +476,7 @@
 				D7FAD0A42B036AEC00C49BD1 /* CustomTableViewCell.swift in Sources */,
 				D7FAD0A12B0363E100C49BD1 /* TableViewReadMore.swift in Sources */,
 				D71649282B0F299D007454A8 /* BaseServiceRequest.swift in Sources */,
+				D7F902B12B2987A400653927 /* BoxRandomView.swift in Sources */,
 				D7D7AD952AD55A3B00647055 /* MyTableViewCell.swift in Sources */,
 				D7D7AD912AD55A3B00647055 /* Extension.swift in Sources */,
 				D78769842AF37C0300E01A3D /* TitleViewModel.swift in Sources */,

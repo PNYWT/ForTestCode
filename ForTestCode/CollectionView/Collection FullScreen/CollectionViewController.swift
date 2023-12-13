@@ -24,7 +24,6 @@ class CollectionViewController: UIViewController {
         cltvShow.backgroundColor = .clear
         cltvShow.isPagingEnabled = true
         cltvShow.showsVerticalScrollIndicator = true
-//        cltvShow.bounces = false
         cltvShow.isDirectionalLockEnabled = true
         cltvShow.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIden)
         cltvShow.delegate = self
