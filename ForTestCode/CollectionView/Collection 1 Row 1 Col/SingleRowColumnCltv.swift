@@ -15,7 +15,9 @@ protocol SingleRowColumnCltvDelegate{
 
 @objc(SingleRowColumnCltv)
 class SingleRowColumnCltv: UICollectionView {
-
+    
+    private let reuseIdentifier = "GiftBoxCell"
+    
     var delegateCltv:SingleRowColumnCltvDelegate?
     private var isHorizontalLayout: Bool = false
 
@@ -31,7 +33,7 @@ class SingleRowColumnCltv: UICollectionView {
     private func registerCell(){
         self.delegate = self
         self.dataSource = self
-        self.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        self.register(UINib(nibName: "GiftBoxViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
     }
 
     required init?(coder: NSCoder) {
@@ -49,7 +51,7 @@ extension SingleRowColumnCltv: UICollectionViewDelegate, UICollectionViewDataSou
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GiftBoxViewCell
         cell.backgroundColor = .red
         return cell
     }

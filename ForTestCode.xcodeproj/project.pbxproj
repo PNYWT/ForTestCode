@@ -15,6 +15,9 @@
 		D71649262B0F072D007454A8 /* ProductViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D71649242B0F072D007454A8 /* ProductViewCell.xib */; };
 		D71649282B0F299D007454A8 /* BaseServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71649272B0F299D007454A8 /* BaseServiceRequest.swift */; };
 		D73DF6242AD6BAE100C06CC4 /* ShowGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */; };
+		D7651DC12B2ABAF600F36950 /* GiftBoxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7651DBF2B2ABAF600F36950 /* GiftBoxViewCell.swift */; };
+		D7651DC22B2ABAF600F36950 /* GiftBoxViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7651DC02B2ABAF600F36950 /* GiftBoxViewCell.xib */; };
+		D7651DC92B2AC2C200F36950 /* AnimationRandomBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7651DC82B2AC2C200F36950 /* AnimationRandomBoxView.swift */; };
 		D78769662AF1F9D400E01A3D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78769642AF1F9D400E01A3D /* CollectionViewController.swift */; };
 		D78769672AF1F9D400E01A3D /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D78769652AF1F9D400E01A3D /* CollectionViewController.xib */; };
 		D787696B2AF1FA9800E01A3D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78769692AF1FA9800E01A3D /* CollectionViewCell.swift */; };
@@ -68,6 +71,9 @@
 		D71649242B0F072D007454A8 /* ProductViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductViewCell.xib; sourceTree = "<group>"; };
 		D71649272B0F299D007454A8 /* BaseServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceRequest.swift; sourceTree = "<group>"; };
 		D73DF6232AD6BAE100C06CC4 /* ShowGiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGiftView.swift; sourceTree = "<group>"; };
+		D7651DBF2B2ABAF600F36950 /* GiftBoxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftBoxViewCell.swift; sourceTree = "<group>"; };
+		D7651DC02B2ABAF600F36950 /* GiftBoxViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftBoxViewCell.xib; sourceTree = "<group>"; };
+		D7651DC82B2AC2C200F36950 /* AnimationRandomBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationRandomBoxView.swift; sourceTree = "<group>"; };
 		D78769642AF1F9D400E01A3D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		D78769652AF1F9D400E01A3D /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		D78769692AF1FA9800E01A3D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -145,6 +151,15 @@
 				D71649272B0F299D007454A8 /* BaseServiceRequest.swift */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		D7651DC32B2ABB0900F36950 /* BoxViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D7651DBF2B2ABAF600F36950 /* GiftBoxViewCell.swift */,
+				D7651DC02B2ABAF600F36950 /* GiftBoxViewCell.xib */,
+			);
+			path = BoxViewCell;
 			sourceTree = "<group>";
 		};
 		D78769682AF1FA7C00E01A3D /* CollectionView */ = {
@@ -296,8 +311,10 @@
 			children = (
 				D7F902AA2B296BB800653927 /* SingleRowColumnCltvVC.swift */,
 				D7F902B22B2987FC00653927 /* TopRandomBoxView.swift */,
-				D7F902AC2B296C1A00653927 /* SingleRowColumnCltv.swift */,
 				D7F902B02B2987A400653927 /* BoxRandomView.swift */,
+				D7F902AC2B296C1A00653927 /* SingleRowColumnCltv.swift */,
+				D7651DC82B2AC2C200F36950 /* AnimationRandomBoxView.swift */,
+				D7651DC32B2ABB0900F36950 /* BoxViewCell */,
 			);
 			path = "Collection 1 Row 1 Col";
 			sourceTree = "<group>";
@@ -383,6 +400,7 @@
 			files = (
 				D78769882AF380D200E01A3D /* CltvGridBtnCell.xib in Resources */,
 				D7D7AD962AD55A3B00647055 /* TableViewVC.xib in Resources */,
+				D7651DC22B2ABAF600F36950 /* GiftBoxViewCell.xib in Resources */,
 				D7D7ADB82AD6B85E00647055 /* PopoverViewController.xib in Resources */,
 				D78769802AF37A7800E01A3D /* jsonTitle.json in Resources */,
 				D787696C2AF1FA9800E01A3D /* CollectionViewCell.xib in Resources */,
@@ -454,6 +472,7 @@
 				D716491E2B0DEC1F007454A8 /* MVVMShowDataVC.swift in Sources */,
 				D71649252B0F072D007454A8 /* ProductViewCell.swift in Sources */,
 				D7D7AD992AD55A3B00647055 /* SceneDelegate.swift in Sources */,
+				D7651DC92B2AC2C200F36950 /* AnimationRandomBoxView.swift in Sources */,
 				D7D7AD972AD55A3B00647055 /* LabelAnnounce.swift in Sources */,
 				D7D7ADC02AD6B8F700647055 /* RowGiftView.swift in Sources */,
 				D78769872AF380D200E01A3D /* CltvGridBtnCell.swift in Sources */,
@@ -465,6 +484,7 @@
 				D78769822AF37BE300E01A3D /* JsonTitleModel.swift in Sources */,
 				D7D7ADB32AD6B57500647055 /* AnimateVC.swift in Sources */,
 				D73DF6242AD6BAE100C06CC4 /* ShowGiftView.swift in Sources */,
+				D7651DC12B2ABAF600F36950 /* GiftBoxViewCell.swift in Sources */,
 				D7B215D72AD799F10030EA4D /* GiftListVC.swift in Sources */,
 				D78769662AF1F9D400E01A3D /* CollectionViewController.swift in Sources */,
 				D787696B2AF1FA9800E01A3D /* CollectionViewCell.swift in Sources */,

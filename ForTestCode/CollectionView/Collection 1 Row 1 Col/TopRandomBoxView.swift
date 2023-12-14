@@ -11,6 +11,7 @@ class TopRandomBoxView: UIView {
     
     var vBoxRandom = BoxRandomView()
     var cltvSingle:SingleRowColumnCltv = SingleRowColumnCltv(frame: .zero, isHorizontal: true)
+    var vAnimation:AnimationRandomBoxView = AnimationRandomBoxView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,5 +49,7 @@ class TopRandomBoxView: UIView {
 extension TopRandomBoxView:BoxRandomViewDelegate{
     func doActionBoxRandom() {
         print("action Somthing in TopRandomBoxView")
+        vAnimation = AnimationRandomBoxView(frame: CGRect(x: -(UIScreen.main.bounds.width + 300), y: (UIScreen.main.bounds.height - (300*2))/2, width: 300, height: 300))
+        vAnimation.creatViewContentAndShowAnimation(addToView:self)
     }
 }
