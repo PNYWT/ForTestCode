@@ -11,6 +11,10 @@ import CoreLocation
 
 class ViewController: UIViewController {
     
+    var getArrData:[TypeModel]{
+        return arrData
+    }
+    
     private var arrData:[TypeModel] = []
     
     @IBOutlet weak var cltvGrid: UICollectionView!
@@ -101,6 +105,14 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch arrData[indexPath.item].title{
+        case "BudgetVC":
+            let vc = BudgetVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case "AngleColorView":
+            let vc = AngleColorView()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
         case "SingleRowColumnCltv":
             let vc = SingleRowColumnCltvVC()
             self.navigationController?.pushViewController(vc, animated: true)

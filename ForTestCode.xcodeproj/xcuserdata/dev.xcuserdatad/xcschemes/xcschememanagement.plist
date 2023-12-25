@@ -9,6 +9,24 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>ForTestCodeTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D786610D2B315457001F6B8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7D7AD672AD55A2200647055</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
