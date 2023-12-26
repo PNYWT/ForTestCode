@@ -7,7 +7,7 @@
 
 import XCTest
 @testable import ForTestCode
-//MARK: Test Func + UI
+//MARK: Test Func in VC
 final class BudgetVCTests: XCTestCase {
     
     var vcBudget:BudgetVC!
